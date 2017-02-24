@@ -1,0 +1,138 @@
+#map {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    z-index: 30;
+    position: absolute;
+    color: #a4a4a4;
+    background-color: #232323;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #888888;
+    padding-top:0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right:26px;
+    top: 10px
+}
+
+.dataMan {
+    color: #a4a4a4;
+    background-color: #232323;
+    box-shadow: 1px 1px 3px #888888;
+}
+
+.btn:hover {
+    background-color: #a4a4a4;
+    color: #232323;
+}
+
+#addMigToJeff {
+    z-index: 30;
+    position: absolute;
+    top: 80px;
+    left: 26px;
+    padding-left:21px;
+    padding-right:21px;
+}
+
+#addMigFromJeff {
+    z-index: 30;
+    position: absolute;
+    top: 125px;
+    left: 26px;
+}
+
+#removeData {
+    z-index: 30;
+    position: absolute;
+    top: 170px;
+    left: 26px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#legend {
+    z-index: 30;
+    position: absolute;
+    left: 26px;
+    bottom: 25px;
+    color: #a4a4a4;
+    background-color: #232323;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #888888;
+    max-width: 450px;
+    padding: 5px;
+}
+
+#legTitle, #legDesc {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+#redSquare {
+    height: 20px;
+    width: 20px;
+    background-color: #ff0000;
+    opacity: .5;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 1;
+    margin-left: 10;
+}
+
+#blueSquare {
+    height: 20px;
+    width: 20px;
+    background-color: #00d7ee;
+    opacity: .5;
+    border-style: solid;
+    border-color: #00d7ee;
+    border-width: 1;
+    margin-left: 10;
+    margin-top: 10px;
+}
+
+#whiteSquare {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    opacity: .5;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1;
+    margin-left: 10;
+    margin-top: 10px;
+}
+
+.leaflet-touch .leaflet-control-zoom-in {
+    color: #a4a4a4;
+    background-color: #232323;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px #888888;
+}
+
+
+
+.leaflet-touch .leaflet-control-zoom-out {
+    color: #a4a4a4;
+    background-color: #232323;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px #888888;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    color: #a4a4a4;
+    background-color: #232323;
+    box-shadow: 1px 1px 3px #888888;
+}

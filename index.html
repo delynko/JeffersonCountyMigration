@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Jefferson County Migration</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="data/counties.js"></script>
+    <script type="text/javascript" src="data/migrationData.js"></script>
+    <link rel="stylesheet" type="text/css" href="migration_style.css">
+
+    
+    
+</head>
+
+<body>
+    <div class="containter-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="title"><h2>Jefferson County Migration</h2></div>
+                <div class="btn dataMan" id="addMigToJeff">Moving To Jeffco</div>
+                <div class="btn dataMan" id="addMigFromJeff">Moving From Jeffco</div>
+                <div class="btn dataMan" id="removeData">Remove Animation</div>
+                <div class="container" id="legend">
+                    <h5 id="legTitle">About This Map</h5>
+                    <p id="legDesc">This map depicts the migration of people both to and from Jefferson County from 2010 to 2014. Click either "Moving To Jeffco" or "Moving From Jeffco" to add migration animation. Each line represents migration of more than 75 people.</p>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <div class="lKey">
+                                <div id="redSquare"></div>
+                            </div>
+                            <div class="lKey">
+                                <div id="blueSquare"></div>
+                            </div>
+                            <div class="lKey">
+                                <div id="whiteSquare"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-10">
+                            <p>County with Positive Net Migration to Jefferson County</p>
+                            <p>County with Positive Net Migration from Jefferson County</p>
+                            <p>County with No Net Migration to/from Jefferson County</p>
+                        </div>
+                    </div>    
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="leaflet.migrationLayer.js"></script>
+<script type="text/javascript" src="jquery-3.1.2.js"></script>
+<script type="text/javascript" src="migration.js"></script>
+</body>
+</html>
